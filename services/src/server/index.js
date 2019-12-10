@@ -1,6 +1,6 @@
 import express from "express";
 
-const port = process.env.PORT || 1300;
+const port = process.env.PORT || 3000;
 const { ApolloServer, gql } = require("apollo-server-express");
 
 const app = express();
