@@ -8,6 +8,10 @@ const axiosME = axios.create({
   baseURL: process.env.MANGA_EDEN_URL
 });
 
+//theis function 
+//filters mangas without last updated date
+//then maps and returns a new object
+//with more readable keys
 const transformMangaEden = manga =>
   manga
     .filter(key => key.ld)
